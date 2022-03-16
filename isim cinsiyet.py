@@ -13,8 +13,8 @@ def gender_counter():
     print(gender_dict)
     estimated_dict = {}
     unknown = gender_dict["3"] + gender_dict["4"]
-    estimated_dict["1"] = gender_dict["1"] + int(unknown * (gender_dict["1"]/(gender_dict["1"] + gender_dict["2"])))
-    estimated_dict["2"] = gender_dict["2"] + int(unknown * (gender_dict["2"]/(gender_dict["1"] + gender_dict["2"])))
+    estimated_dict["1"] = gender_dict["1"] + round(unknown * (gender_dict["1"]/(gender_dict["1"] + gender_dict["2"])))
+    estimated_dict["2"] = gender_dict["2"] + (unknown - (estimated_dict["1"] - gender_dict["1"]))
     print(estimated_dict)
 
 
