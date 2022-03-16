@@ -11,4 +11,4 @@ The relevant list was first converted to a python list. Then a function was writ
 After this stage, the "estimated_dict" dictionary was created, which classifies all names as male and female, ie 1 and 2, although it is not certain. First of all, unisex nouns and nouns whose gender cannot be determined in the first dictionary were collected. 
 This total number was distributed proportionally according to 1 and 2 in the first dictionary. 
 The ratios mentioned here are the ratios of 1 and 2 in gender_dict to each other. For easier understanding, a principle similar to the principle of distributing the undecided was followed in the election polls. 
-In the test file, random names were listed as a list, and the function was allowed to determine the gender of the names here. Friends who want to test their own data can calculate the gender distribution by adding their own lists to the list in the "test" file.
+In the test file, random names were listed as a list, and the function was allowed to determine the gender of the names here. If you want to test your own data, you can calculate the gender distribution by adding your own list to the list in the "test" file.
