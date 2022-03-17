@@ -2,7 +2,8 @@
 Türkçe isimler bulunan bir listede, hangi cinsiyetten kaç adet birey olduğunun belirlenmesine yarayan bir python kodu. 
 Bu kod için türkçe isimler veritabanı olarak https://gist.github.com/ismailbaskin/1325813/9157dd8ced294a11218449d43bf9f772780f5d85 adresindeki isim ve cinsiyet listesi kullanılmıştır.
 İlgili liste öncelikle bir python listesine dönüştürüldü. Ardından isimlerin cinsiyetlerini "1: erkek, 2: kadın, 3: unisex ve 4: bilinmeyen" olarak ayıran bir fonksiyon yazıldı.
-Fonksiyon çıktı olarak isimlerin cinsiyetlere göre dağılımını 1, 2, 3 ve 4 olarak kodlayan bir sözlük olan gender_dict'i oluşturur. Buradaki sınıflandırma kesin olmakla birlikte 3 ve 4 cinsiyeti ayırt edilemeyen isimlerin sayısıdır. 
+Bu fonksiyonla öncelikle bütün isimlerin karşısına cinsiyet değerlerinin yazıldığı bir sözlük oluşturuldu.
+Fonksiyon ayrıca çıktı olarak isimlerin cinsiyetlere göre dağılımını 1, 2, 3 ve 4 olarak kodlayan bir sözlük olan gender_dict'i oluşturur. Buradaki sınıflandırma kesin olmakla birlikte 3 ve 4 cinsiyeti ayırt edilemeyen isimlerin sayısıdır. 
 Bu aşamadan sonra kesin olmasa da tahmini olarak bütün isimleri erkek ve kadın yani 1 ve 2 olarak sınıflandıran "estimated_dict" sözlüğü oluşturuldu. Burada öncelikle ilk oluşturulan sözlükteki unisex isimler ve cinsiyeti belirlenemeyen isimler toplandı. Bu toplam rakam yine ilk sözlükteki 1 ve 2'ye göre oransal olarak dağıtıldı. Burada bahsedilen oranlar gender_dict'teki 1 ve 2'nin birbirine olan oranlarıdır. Daha kolay anlaşılması için seçim anketlerinde kararsızların dağıtılması prensibine benzer bir prensip izlenmiş oldu.
 Test dosyasında rastgele isimler liste şeklinde sıralanarak fonksiyonun buradaki isimlerin cinsiyetlerini belirlemesi sağlandı. Kendi verilerini test etmek isteyen arkadaşlar "test" dosyasındaki listeye kendi listelerini ekleyerek cinsiyet dağılımını hesaplayabilirler. 
 
