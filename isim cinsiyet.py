@@ -3,6 +3,13 @@ from test import test_list
 
 
 def gender_counter():
+    test_processed_dict = {}
+    for item in test_list:
+        if item in name_dict:
+            test_processed_dict[item] = name_dict[item]
+        else:
+            test_processed_dict[item] = 4
+    print(test_processed_dict)
     gender_dict = {"1": 0, "2": 0, "3": 0, "4": 0}
     for i in test_list:
         if i in name_dict:
